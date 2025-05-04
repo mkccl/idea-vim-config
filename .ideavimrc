@@ -20,6 +20,8 @@ let mapleader = " "
 nmap <space> <Leader>
 
 
+
+
 "" Plugin Settings
 "" ========================================================
 
@@ -33,6 +35,7 @@ set easymotion
 set notimeout
 " Which-key settings
 set which-key
+
 let g:WhichKey_FontSize = 16
 let g:WhichKey_CommandColor = "#41ead4"
 let g:WhichKey_PrefixColor = "#f335b2"
@@ -160,6 +163,12 @@ nnoremap qj @q
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)
 
+" Leave insert mode with alt s
+inoremap <A-s> <Esc>
+
+
+"" leader md should press distraction mode this is the id ToggleDistractionFreeMode
+inoremap <leader>md <action>(ToggleDistractionFreeMode)
 
 "" Leader commands
 "" ========================================================
